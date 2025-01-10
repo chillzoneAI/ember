@@ -1,5 +1,7 @@
 # EMBER
 
+![image](https://github.com/user-attachments/assets/ca0c947a-3a60-4f83-8777-5d56d2832a3d)
+
 A decentralized digital time capsule protocol built on Solana, enabling secure, time-locked data storage and inheritance transfer through smart contracts.
 
 ## Protocol Overview
