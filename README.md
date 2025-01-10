@@ -10,7 +10,7 @@ EMBER implements a secure data storage and time-based transfer system using Sola
 
 ### Core Components
 
-- **Program ID**: `EmB3RpR0toc0LiDQ7qPxV8YJ5uGvHGNoU4x5otGqS8w`
+- **Program ID**: `Check Twitter for updates.`
 - **Runtime**: Solana (1.17.0)
 - **Language**: Rust
 - **Encryption**: AES-256-GCM with threshold key sharing
