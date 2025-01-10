@@ -1,4 +1,4 @@
-# EMBER Protocol
+# EMBER
 
 A decentralized digital time capsule protocol built on Solana, enabling secure, time-locked data storage and inheritance transfer through smart contracts.
 
@@ -8,7 +8,7 @@ EMBER implements a secure data storage and time-based transfer system using Sola
 
 ### Core Components
 
-- **Program ID**: `EmB3RpR0toc0LiDQ7qPxV8YJ5uGvHGNoU4x5otGqS8w`
+- **Program ID**: `Check Twitter for updates.`
 - **Runtime**: Solana (1.17.0)
 - **Language**: Rust
 - **Encryption**: AES-256-GCM with threshold key sharing
@@ -71,14 +71,14 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 sh -c "$(curl -sSfL https://release.solana.com/v1.17.0/install)"
 
 # Install Project Dependencies
-cargo install --git https://github.com/EmberProtocol/ember-cli
+cargo install --git https://github.com/emberai-sol/ember-cli
 ```
 
 ### Local Development
 
 ```bash
 # Clone repository
-git clone https://github.com/EmberProtocol/ember
+git clone https://github.com/emberai-sol/ember
 cd ember
 
 # Install dependencies
@@ -109,7 +109,7 @@ MAX_CAPSULE_SIZE=5242880  # 5MB
 
 ```typescript
 import { Connection, PublicKey, TransactionInstruction } from '@solana/web3.js';
-import { EmberProtocol } from '@ember/sdk';
+import { emberai-sol } from '@ember/sdk';
 
 const createCapsule = async (
   connection: Connection,
@@ -118,7 +118,7 @@ const createCapsule = async (
   timelock: number,
   data: Buffer
 ) => {
-  const ember = new EmberProtocol(connection);
+  const ember = new emberai-sol(connection);
   
   // Generate encryption key
   const encryptionKey = await ember.generateKey();
@@ -149,7 +149,7 @@ const retrieveCapsule = async (
   capsuleAddress: PublicKey,
   recipient: PublicKey
 ) => {
-  const ember = new EmberProtocol(connection);
+  const ember = new emberai-sol(connection);
   
   // Verify time conditions
   await ember.verifyAccess(capsuleAddress, recipient);
